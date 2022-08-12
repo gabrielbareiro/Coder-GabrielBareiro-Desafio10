@@ -1,0 +1,26 @@
+[{
+  "title": "Juice - Ocean Spray Kiwi",
+  "price": 24.69,
+  "image": "http://dummyimage.com/250x250.png/ff4444/ffffff",
+  "id": 1
+}, {
+  "title": "Soup - Campbells Beef Noodle",
+  "price": 64.78,
+  "image": "http://dummyimage.com/250x250.png/cc0000/ffffff",
+  "id": 2
+}, {
+  "title": "Bananas",
+  "price": 76.38,
+  "image": "http://dummyimage.com/250x250.png/5fa2dd/ffffff",
+  "id": 3
+}, {
+  "title": "Melon - Cantaloupe",
+  "price": 66.48,
+  "image": "http://dummyimage.com/250x250.png/dddddd/000000",
+  "id": 4
+}, {
+  "title": "Muffin Puck Ww Carrot",
+  "price": 66.64,
+  "image": "http://dummyimage.com/250x250.png/5fa2dd/ffffff",
+  "id": 5
+}]
