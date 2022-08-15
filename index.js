@@ -34,6 +34,22 @@ app.get("/", async (req, res) => {
 	});
 });
 
+app.get("/productos", async (req, res) => {
+	const producto = await containerProducts.getAll();
+	res.render("products", {
+		titulo: "todos los productos",
+		list: producto,
+		listExist: true,
+		producto: true
+	});
+});
+
+app.post("/productos", async (req, res) => {
+	const producto = req.body;
+	containerProducts.save(producto);
+	const listExist = true;
+	res.redirect("/productos");
+});
 
 
 app.listen(5000, err => {

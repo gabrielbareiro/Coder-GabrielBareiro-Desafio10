@@ -9,7 +9,7 @@ class Container {
             const content = await fs.promises.readFile(this.name, 'utf8');
             const contentObj = JSON.parse(content);
             contentObj.push({
-                title: items.title,
+                title: items.title, 
                 price: items.price,
                 image: items.image,
                 id: contentObj.length + 1
