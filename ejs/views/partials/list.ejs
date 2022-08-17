@@ -1,0 +1,26 @@
+<div class="titulo d-flex justify-content-center">
+    <h2>Form con ejs</h2>
+    <br>
+</div>
+<div class="container">
+    <% if (listExist) { %>
+        <div class="d-flex p-2 bd-highlight flex-wrap">
+            <% list.forEach((item)=> { %>
+                <div class="card m-2">
+                    <img src=<%=item.image %> class="card-img-top imagen" style="max-width:14rem">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <%= item.title %>
+                        </h5>
+                        <p class="card-text">$<%= item.price %>
+                        </p>
+                    </div>
+                </div>
+                <% }); %>
+        </div>
+        <% } else { %>
+            <div class="alert alert-danger" role="alert">
+                <strong>No hay productos</strong>
+            </div>
+            <% } %>
+</div>
