@@ -5,7 +5,7 @@ const {Container} = require('./container')
 
 
 app.use(express.urlencoded({ extended: true }))
-const PORT = 5000 || process.env.PORT;
+const PORT = 8080 || process.env.PORT;
 
 
 const containerProducts = new Container('./data/products.txt')
@@ -52,7 +52,7 @@ app.post("/productos", async (req, res) => {
 });
 
 
-app.listen(5000, err => {
+app.listen(8080, err => {
     if(err) throw new Error (`Error on server: ${err}`);
     console.log(`Server is running on port: ${PORT}`);
 })
